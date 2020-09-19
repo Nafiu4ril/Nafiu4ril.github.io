@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="w3.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="w3-border">
+  <div class="w3-bar w3-black">
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
+    <a href="Computers.html" class="w3-bar-item w3-button w3-hide-small">Computers</a>
+    <a href="Jerseys.html" class="w3-bar-item w3-button w3-hide-small">Jerseys</a>
+    <a href="Cars.html" class="w3-bar-item w3-button w3-hide-small">Cars</a>
+    <a href="Bikes.html" class="w3-bar-item w3-button w3-hide-small">Bikes</a>
+    <a href="Sneakers.html" class="w3-bar-item w3-button w3-hide-small">Sneakers</a>
+    <a href="Phones.html" class="w3-bar-item w3-button w3-hide-small">Phones</a>
+     <a href="ContactUs.html" class="w3-bar-item w3-button w3-hide-small">Contact Us</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+    onclick="myFunction()">&#9776;</a>
+ </div> 
+ <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+  <a href="index.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Computers.html" class="w3-bar-item w3-button">Computers</a>
+    <a href="Jerseys.html" class="w3-bar-item w3-button">Jerseys</a>
+    <a href="Cars.html" class="w3-bar-item w3-button">Cars</a>
+  <a href="Bikes.html" class="w3-bar-item w3-button">Bikes</a>
+  <a href="Sneakers.html" class="w3-bar-item w3-button">Sneakers</a>
+  <a href="Phones.html" class="w3-bar-item w3-button">Phones</a>
+  <a href="ContactUs.html" class="w3-bar-item w3-button">Contact Us</a>
+ </div>
+<script>
+  function myFunction(){
+    var x = document.getElementById("demo");
+   if(x.className.indexOf("w3-show") == -1) {
+         x.className += " w3-show ";
+    } else {
+        x.className = x.className.replace("w3-show","");
+  }
+}
+</script>
+</div>
+<div class="w3-border" style="height:350px;width:auto;margin:auto;margin-top:-1px;">
+   <img class="mySlides w3-animate-fading" src="Porschegreen.jpg" style="height:100%;width:100%">
+  <img class="mySlides w3-animate-fading" src="Porscheblue.jpg" style="height:100%;width:100%">
+  <img class="mySlides w3-animate-fading" src="Maseratiblack.jpg" style="height:100%;width:100%">
+  <img class="mySlides w3-animate-fading" src="Lamborghiniwhite.jpg" style="height:100%;width:100%">
+  <img class="mySlides w3-animate-fading" src="Bugattiblue.jpg" style="height:100%;width:100%">
+  <img class="mySlides w3-animate-fading" src="Ferrarired.jpg" style="height:100%;width:100%">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+</div>
+<div class="w3-border w3-red" style="height:200px;width:auto;">
+ <h2 align="center"><b>WELCOME TO JUST FOR YOU SHOPPING MALL</b></h2>
+ <p>Our Shopping mall is the best shopping mall where Cars,Computer Accessories,Bikes,Sneakers,Phones are sold.We are into selling of Cars,Computer Accessories,Bikes,Sneakers and Phones.</p>
+</div>
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Cars.html"><img src="Ferrarired.jpg" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Cars</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Bikes.html"><img src="bmwsportblue.jpg" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Bikes</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Computers.html"><img src="appleslaptop.jpeg" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Laptops</b></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Jerseys.html"><img src="chelsea2.gif" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Jerseys</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Phones.html"><img src="iphone.jpeg" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Phones</b></h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+      <a href="Sneakers.html"><img src="redsneakers.jpeg" style="height:300px;width:100%"></a>
+      <div class="w3-container">
+        <h5><b>Sneakers</b></h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-border" style="height:500px;background-color:black;">
+<ol>
+<br>
+<br>
+<p>
+  <a href="www.instagram.com/"><font color="grey">Instagram</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.facebook.com/"><font color="grey">Facebook</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.youtube.com/"><font color="grey">Youtube</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.linkedin.com/"><font color="grey">Linkedin</font></a>
+</p>
+<br>
+<br>
+</ol>
+<p align="center">
+  <font color="grey"> Copyright &copy 2020 </font>
+</p>
+</div>
+</body>
+</html>

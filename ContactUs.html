@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ContactUs.css">
+	<link rel="stylesheet" href="w3.css">
+  <script src="jquery-3.5.1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="w3-border">
+  <div class="w3-bar w3-black">
+  	<a href="Home.html" class="w3-bar-item w3-button w3-hide-small">Home</a>
+  	<a href="Computers.html" class="w3-bar-item w3-button w3-hide-small">Computers</a>
+  	<a href="Jerseys.html" class="w3-bar-item w3-button w3-hide-small">Jerseys</a>
+  	<a href="Cars.html" class="w3-bar-item w3-button w3-hide-small">Cars</a>
+  	<a href="Bikes.html" class="w3-bar-item w3-button w3-hide-small">Bikes</a>
+  	<a href="Sneakers.html" class="w3-bar-item w3-button w3-hide-small">Sneakers</a>
+  	<a href="Phones.html" class="w3-bar-item w3-button w3-hide-small">Phones</a>
+  	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" 
+  	onclick="myFunction()">&#9776;</a>
+ </div> 
+ <div id="demo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+ 	<a href="Home.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Computers.html" class="w3-bar-item w3-button">Computers</a>
+    <a href="Jerseys.html" class="w3-bar-item w3-button">Jerseys</a>
+    <a href="Cars.html" class="w3-bar-item w3-button">Cars</a>
+ 	<a href="Bikes.html" class="w3-bar-item w3-button">Bikes</a>
+ 	<a href="Sneakers.html" class="w3-bar-item w3-button">Sneakers</a>
+ 	<a href="Phones.html" class="w3-bar-item w3-button">Phones</a>
+ </div>
+<script>
+	function myFunction(){
+		var x = document.getElementById("demo");
+	 if(x.className.indexOf("w3-show") == -1) {
+         x.className += " w3-show ";
+	  } else {
+        x.className = x.className.replace("w3-show","");
+	}
+}
+</script>
+</div>
+<h1>Contact Form</h1>
+
+<div class="container">
+  <form action="db.php">
+    <label for="fname">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name........">
+    <label for="lname">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="Your email........">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message here......." style="height:200px"></textarea>
+    <input type="submit" value="Contact Us">
+  </form>
+</div>
+<div class="w3-border" style="height:500px;background-color:black;">
+<ol>
+<br>
+<br>
+<p>
+  <a href="www.instagram.com/"><font color="grey">Instagram</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.facebook.com/"><font color="grey">Facebook</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.youtube.com/"><font color="grey">Youtube</font></a>
+</p>
+<br>
+<br>
+<p>
+  <a href="www.linkedin.com/"><font color="grey">Linkedin</font></a>
+</p>
+<br>
+<br>
+</ol>
+<p align="center">
+  <font color="grey"> Copyright &copy 2020 </font>
+</p>
+</div>
+</body>
+</html>
